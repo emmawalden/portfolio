@@ -1,0 +1,21 @@
+header {
+    // Photo from unsplash by Henry Be
+    background-image: url("../assets/poppies.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    border-bottom: 1px solid $mainColor;
+}
+
+h1 {
+    padding-bottom: 20px;
+}
+
+.headingText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding-top: 50px;
+}

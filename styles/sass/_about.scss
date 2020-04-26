@@ -1,0 +1,21 @@
+h3 {
+    padding: 50px 0 25px 0;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    grid-auto-flow: dense;
+}
+
+.about img,
+.about p {
+    width: 600px;
+}
+
+.about p {
+    background: #FFEFEF;
+    padding: 40px;
+    border: 10px solid #F57C7E;
+}

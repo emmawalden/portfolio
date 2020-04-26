@@ -1,0 +1,65 @@
+html {
+    font-size: 62.5%;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+// Font sizing & families
+
+h1 {
+    font-size: 11rem;
+}
+
+h2 {
+    
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 8rem;
+}
+
+p {
+    font-size: 2.5rem;
+    line-height: 40px;
+}
+
+h1,
+h3 {
+    font-family: $mainFont;
+}
+
+h2,
+p {
+    font-family: $secondaryFont;
+}
+
+.socialList p {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+i {
+    font-size: 1.8rem;
+}
+
+// Colors
+
+header, 
+body, 
+a {
+    color: $mainColor;
+}
