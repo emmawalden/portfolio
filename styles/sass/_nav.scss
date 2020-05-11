@@ -1,11 +1,46 @@
+// Hamburger menu
+.topNav {
+    overflow: hidden;
+    position: relative;
+
+    a {
+        display: block;
+    }
+}
+
+
+.hamburgerNav {
+    width: 40px;
+    height: 40px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.hamburgerNav img:hover {
+    cursor: pointer;
+}
+
+.myLinks {
+    display: none;
+}
+
 
 .socialList {
     display: flex;
     justify-content: flex-end;
+
         i {
-            padding: 20px 20px 0 0;
+            padding: 20px 40px 0 0;
         }
-            p {
-                padding: 10px 20px 0 0;
-            }
+
+        p {
+            padding: 10px 20px 0 0;
+        }
+}
+
+.socialList i:hover,
+.socialList i:focus,
+.socialList p:hover,
+.socialList p:focus  {
+    color: $backgroundColor;
 }

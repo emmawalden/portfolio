@@ -223,10 +223,16 @@ textarea {
 
 html {
   font-size: 62.5%;
+  font-family: "Heebo", sans-serif;
+  background-color: #f7f7ff;
 }
 
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 img {
@@ -235,13 +241,13 @@ img {
 }
 
 .wrapper {
-  width: 90%;
+  width: 85%;
   max-width: 1180px;
   margin: 0 auto;
 }
 
 h1 {
-  font-size: 11rem;
+  font-size: 9rem;
 }
 
 h2 {
@@ -252,9 +258,26 @@ h3 {
   font-size: 8rem;
 }
 
+h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
 p {
-  font-size: 2.5rem;
   line-height: 40px;
+}
+
+i,
+p,
+a,
+.socialList p {
+  font-size: 1.8rem;
 }
 
 h1,
@@ -268,12 +291,7 @@ p {
 }
 
 .socialList p {
-  font-size: 1.8rem;
   text-transform: uppercase;
-}
-
-i {
-  font-size: 1.8rem;
 }
 
 header,
@@ -307,7 +325,31 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-  padding-top: 50px;
+  padding-top: 110px;
+}
+
+.topNav {
+  overflow: hidden;
+  position: relative;
+}
+
+.topNav a {
+  display: block;
+}
+
+.hamburgerNav {
+  width: 40px;
+  height: 40px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.hamburgerNav img:hover {
+  cursor: pointer;
+}
+
+.myLinks {
+  display: none;
 }
 
 .socialList {
@@ -320,11 +362,18 @@ h1 {
 }
 
 .socialList i {
-  padding: 20px 20px 0 0;
+  padding: 20px 40px 0 0;
 }
 
 .socialList p {
   padding: 10px 20px 0 0;
+}
+
+.socialList i:hover,
+.socialList i:focus,
+.socialList p:hover,
+.socialList p:focus {
+  color: #FA7268;
 }
 
 h3 {
@@ -346,7 +395,10 @@ h3 {
 }
 
 .about p {
-  background: #FFEFEF;
-  padding: 40px;
-  border: 10px solid #F57C7E;
+  background-color: #fff;
+  padding: 25px;
+}
+
+.projects img {
+  width: 60%;
 }

@@ -1,9 +1,15 @@
 html {
     font-size: 62.5%;
+    font-family: $secondaryFont;
+    background-color: $accentColor;
 }
 
 ul {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 img {
@@ -12,7 +18,7 @@ img {
 }
 
 .wrapper {
-    width: 90%;
+    width: 85%;
     max-width: 1180px;
     margin: 0 auto;
 }
@@ -20,7 +26,7 @@ img {
 // Font sizing & families
 
 h1 {
-    font-size: 11rem;
+    font-size: 9rem;
 }
 
 h2 {
@@ -32,9 +38,26 @@ h3 {
     font-size: 8rem;
 }
 
+h4 {
+    font-family: $mainFont;
+    font-size: 3rem;
+}
+
+h5 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
 p {
-    font-size: 2rem;
     line-height: 40px;
+}
+
+i,
+p,
+a,
+.socialList p {
+    font-size: 1.8rem;
 }
 
 h1,
@@ -48,12 +71,7 @@ p {
 }
 
 .socialList p {
-    font-size: 1.8rem;
     text-transform: uppercase;
-}
-
-i {
-    font-size: 1.8rem;
 }
 
 // Colors
