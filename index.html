@@ -4,38 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emma Walden</title>
-    <link href="https://fonts.googleapis.com/css?family=Heebo|Playfair+Display:700&display=swap" rel="stylesheet">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Work+Sans:wght@200&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/11b975b2f5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <!-- This is the start of the header -->
 <header>
-    <div class="topNav">
-        <ul class="myLinks menuHide">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <!-- Hamburger by Caesar Dwiky Darmawan from the Noun Project -->
-        <div class="hamburgerNav">
-            <img class="hamburger" src="./assets/hamburger.svg" alt="">
+    <div class="hamburgerNav">
+    <!-- Hamburger by Caesar Dwiky Darmawan from the Noun Project -->
+        <a href="#mainMenu" id="mainMenuToggle" class="menuToggle" aria-label="Open main menu"><img class="hamburger" src="./assets/hamburger.svg" aria-hidden="true"><span class="sr-only">Open main menu</span></a>
+        <nav id="mainMenu" class="mainMenu" aria-label="Main menu">
             <!-- cross large by Caesar Dwiky Darmawan from the Noun Project -->
-            <img class="close hidden" src="./assets/close.svg" alt="">
-        </div>
+            <a href="#mainMenuToggle" id="mainMenuClose" class="menuClose" aria-label="Close main menu"><img class="close" src="./assets/close.svg" alt="" aria-hidden="true"><span class="sr-only">Close main menu</span></a>
+
+            <ul class="myLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="#mainMenuToggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
     </div>
     <div class="headingText wrapper">
         <h1>Emma Walden</h1>
         <h2>Front End Web Developer</h2>
     </div>
 </header>
+
+<!-- Start of the body -->
+<body>
+  <section class="wrapper">
+    <h3>About</h3>
+    <div class="about">
+        <img src="./assets/profile.jpg" alt="Emma standing in front of a canyon">
+        <p>Hello! My name is Emma and I’m a Front-End Web Developer based in Toronto. I have a background in Adventure Travel, while I had an array of jobs in my career in the Travel industry it was building and creating trips where I found my passion for improving websites to be functional, beautiful, and user-friendly. When I’m not coding you can find me petting dogs, going hiking, and travelling to places near and far.</p>
+    </div>
+  </section>  
+  <section class="projects wrapper">
+    <h3>Projects</h3>
+    <div class="projectContainer">
+        <div class="projectText project1">
+            <h4>Love in the Time of Allergies</h4>
+            <h5>React API Firebase Sass</h5>
+            <p>A react application that allows users to create guests with dietary restrictions saving them to Firebase. Users can add them to an upcoming party and search recipes using the Spoonacular API based on the restrictions of their party guests. Made in collaboration with Patrick Sherrard, Matthew Sen, and Bhagirthi Jhamb.</p>
+            <a href="">View Live</a>
+            <a href="">View on Github</a>
+        </div>
+        <img src="./assets/love.png" alt="laptop and mobile view of Love in the Time of Allergies website">
+    </div>
+    <div class="projectContainer">
+        <div class="projectText project2">
+            <h4>Bestsellers to Read</h4>
+            <h5>React API Firebase Sass</h5>
+            <p>A react application that allows users to pick a category of book to show the top 15 Bestselling books in that category using the New York Times API. Users can add books to a list to read using Firebase. </p>
+            <a href="">View Live</a>
+            <a href="">View on Github</a>
+        </div>
+        <img src="./assets/bestsellers.png" alt="laptop and mobile view of Bestsellers to Read website">
+    </div>
+    <div class="projectContainer">
+        <div class="projectText project3">
+            <h4>A Moment in Nature</h4>
+            <h5>Javascript JQuery API Sass HTML</h5>
+            <p>An application that allows users to choose from a dropdown of nature options and display a gallery of images using the Pexels API. Each option in the dropdown is accompanied by audio. Made in collaboration with Shanel Beebe</p>
+            <a href="">View Live</a>
+            <a href="">View on Github</a>
+        </div>
+        <img src="./assets/nature.png" alt="laptop and mobile view of A Moment in Nature website">
+    </div>
+    <div class="projectContainer">
+        <div class="projectText project4">
+            <h4>Plant Matchmaker</h4>
+            <h5>Javascript JQuery Sass HTML</h5>
+            <p>An application that asks the user a few simple questions to pair them with their ideal plant. </p>
+            <a href="">View Live</a>
+            <a href="">View on Github</a>
+        </div>
+        <img src="./assets/plants.png" alt="laptop and mobile view of Plant Matchmaker website">
+    </div>
+  </section>
+  <section class="skills wrapper">
+      <h3>Skills</h3>
+    <ul>
+        <li><i class="fab fa-css3-alt"></i></li>
+        <li><i class="fab fa-html5"></i></li>
+        <li><i class="fab fa-github"></i></li>
+        <li><i class="fas fa-terminal"></i></li>
+        <li><i class="fab fa-sass"></i></li>
+        <!-- By Alexander Zharikov on the Noun Project -->
+        <li><img src="./assets/jquery.svg" alt=""></li>
+        <li></li>
+        <li><i class="fab fa-js"></i></li>
+        <li><i class="fab fa-react"></i></li>
+    </ul>
+  </section>
 <!-- This is the nav with the social links -->
-<nav>
-    <div class="wrapper">
+<nav class="socialNav">
+    <div class="socialContainer wrapper">
+        <div>
+            <h6>Contact Me</h6>
+            <p class="email">emmajanewalden@gmail.com</p>
+        </div>
         <ul class="socialList">
-            <li>
-                <p>Contact Me</p>
-            </li>
             <li>
                 <a href="https://twitter.com/emma_walnut" aria-label="link to twitter page" rel="noopener"
                     target="_blank"><i class="fab fa-twitter"></i></a>
@@ -55,57 +128,9 @@
         </ul>
     </div>
 </nav>
-<!-- Start of the body -->
-<body>
-  <section class="wrapper">
-    <h3>About</h3>
-    <div class="about">
-        <img src="./assets/profile.jpg" alt="Emma standing in front of a canyon">
-        <p>Hello! My name is Emma and I’m a Front-End Web Developer based in Toronto. I'm delving into the world of web
-        development with a background in Adventure Travel. I had an array of jobs in my career in the Travel industry but it was building and creating trips where I found my passion for improving websites to be functional, beautiful, and user-friendly. When I’m not coding you can find me petting dogs, going hiking, and travelling to places near and far.</p>
-    </div>
-  </section>  
-  <section class="projects wrapper">
-    <h3>Projects</h3>
-    <div>
-        <h4>Love in the Time of Allergies</h4>
-        <h5>React API Firebase Sass</h5>
-        <p>A react application that allows users to create guests with dietary restrictions saving them to Firebase. Users can add them to an upcoming party and search recipes using the Spoonacular API based on the restrictions of their party guests.</p>
-        <img src="./assets/love.png" alt="laptop and mobile view of Love in the Time of Allergies website">
-    </div>
-    <div>
-        <h4>Bestsellers to Read</h4>
-        <h5>React API Firebase Sass</h5>
-        <p>A react application that allows users to pick a category of book to show the top 15 Bestselling books in that category using the New York Times API. Users can add books to a list to read using Firebase. </p>
-        <img src="./assets/bestsellers.png" alt="laptop and mobile view of Bestsellers to Read website">
-    </div>
-    <div>
-        <h4>A Moment in Nature</h4>
-        <h5>Javascript JQuery API Sass HTML</h5>
-        <p>An application that allows users to choose from a dropdown of nature options and display a gallery of images using the Pexels API. Each option in the dropdown is accompanied by audio.</p>
-        <img src="./assets/nature.png" alt="laptop and mobile view of A Moment in Nature website">
-    </div>
-    <div>
-        <h4>Plant Matchmaker</h4>
-        <h5>Javascript JQuery Sass HTML</h5>
-        <p>An application that asks the user a few simple questions to pair them with their ideal plant. </p>
-        <img src="./assets/plants.png" alt="laptop and mobile view of Plant Matchmaker website">
-    </div>
-  </section>
-  <section class="skills wrapper">
-      <h3>Skills</h3>
-    <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-  </section>
+<footer>
+    <p>© 2020 Emma Walden</p>
+</footer>
   <!-- JQuery & Javascript sources  -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="js/script.js"></script>

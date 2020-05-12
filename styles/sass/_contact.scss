@@ -1,0 +1,43 @@
+// Social list at the bottom of the page
+.socialNav {
+    background-color: $mainColor;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.socialContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h6 {
+        text-align: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #fff;
+    }
+
+    .email {
+        padding: 20px 0;
+    }
+}
+
+.socialList {
+    display: flex;
+    justify-content: center;
+
+        i {
+            padding: 0 40px;
+            color: #fff;
+        }
+
+        p {
+            padding: 10px 20px 0 0;
+        }
+}
+
+.socialList i:hover,
+.socialList i:focus,
+.socialList p:hover,
+.socialList p:focus  {
+    color: $backgroundColor;
+}

@@ -1,7 +1,7 @@
 header {
     // Photo from unsplash by Henry Be
     background-image: url("../assets/poppies.jpg");
-    background-position: center;
+    background-position: 70% 40%;
     background-repeat: no-repeat;
     background-size: cover;
     height: 80vh;
@@ -17,5 +17,5 @@ h1 {
     flex-direction: column;
     align-items: center;
     height: 100%;
-    padding-top: 110px;
+    padding-top: 25px;
 }
