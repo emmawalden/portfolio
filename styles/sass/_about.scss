@@ -7,10 +7,23 @@ h3 {
     flex-wrap: wrap;
 }
 
-.about img {
+.aboutImg {
     width: 350px;
     height: 350px;
-    margin-left: 30px;
+    margin-right: 30px;
+    
+}
+
+.aboutText {
+    position: relative;
+}
+
+.drawing {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: -70px;
+    right: -115px;
 }
 
 .about p {
