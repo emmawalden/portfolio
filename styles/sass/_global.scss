@@ -23,18 +23,25 @@ img {
     margin: 0 auto;
 }
 
-// Font sizing & families
+// Font families
+
+h1,
+h3,
+h4 {
+    font-family: $mainFont;
+    font-weight: 200;
+}
+
+// Font sizing 
 
 h1 {
     font-size: 8rem;
-    font-family: $secondaryFont;
     
 }
 
-h2 {
-    font-family: $secondaryFont;
+h2,
+h4 {
     font-size: 3rem;
-    font-weight: bold;
 }
 
 i {
@@ -46,18 +53,8 @@ h3 {
     font-size: 6rem;
 }
 
-h4 {
-    font-family: $mainFont;
-    font-size: 3rem;
-}
-
 h5,
-h6 {
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-}
-
+h6,
 p,
 a {
     font-size: 1.8rem;
@@ -67,15 +64,22 @@ a {
     font-size: 2rem;
 }
 
+// Font styling
+
+h2 {
+    font-weight: bold;
+}
+
+h5,
+h6 {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
 .about p {
     line-height: 40px;
 }
 
-
-h1,
-h3 {
-    font-family: $mainFont;
-}
 
 .projects p {
     line-height: 25px;
