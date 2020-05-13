@@ -1,5 +1,5 @@
 h4 {
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 h5 {
@@ -23,4 +23,31 @@ h5 {
 
 .projects img {
     width: 50%;
+}
+
+.projects p {
+    margin-bottom: 30px;
+}
+
+.projectLinks {
+    display: flex;
+    justify-content: center;
+
+    a {
+        border: 1px solid $mainColor;
+        border-radius: 2px;
+        width: 150px;
+        background-color: $backgroundColor;
+        color: #fff;
+        padding: 8px 10px;
+        text-align: center;
+        margin-right: 10px;
+    }
+
+    a:hover,
+    a:focus {
+        border: 1px solid $backgroundColor;
+        background-color: $mainColor;
+
+    }
 }

@@ -12,21 +12,30 @@
 </head>
 <!-- This is the start of the header -->
 <header>
-    <div class="hamburgerNav">
-    <!-- Hamburger by Caesar Dwiky Darmawan from the Noun Project -->
-        <a href="#mainMenu" id="mainMenuToggle" class="menuToggle" aria-label="Open main menu"><img class="hamburger" src="./assets/hamburger.svg" aria-hidden="true"><span class="sr-only">Open main menu</span></a>
-        <nav id="mainMenu" class="mainMenu" aria-label="Main menu">
-            <!-- cross large by Caesar Dwiky Darmawan from the Noun Project -->
-            <a href="#mainMenuToggle" id="mainMenuClose" class="menuClose" aria-label="Close main menu"><img class="close" src="./assets/close.svg" alt="" aria-hidden="true"><span class="sr-only">Close main menu</span></a>
-
-            <ul class="myLinks">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <div class="topNav">
+    
+        
+        <nav id="mainMenu" class="fixed">
+            <div class="hamburgerNav">
+            <!-- Hamburger by Caesar Dwiky Darmawan from the Noun Project -->
+                <a href="" aria-label="Open main menu"><img class="hamburger show"
+                src="./assets/hamburger.svg"></a>
+                <!-- cross large by Caesar Dwiky Darmawan from the Noun Project -->
+                <a href="" aria-label="Close main menu"><img class="close hidden" src="./assets/close.svg"
+                alt=""></a>
+            </div>
+            <ul class="myLinks menuHide">
+                <div class="firstLinks">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </div>
+                <div class="secondLinks">
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </div>
             </ul>
         </nav>
-        <a href="#mainMenuToggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
+
     </div>
     <div class="headingText wrapper">
         <h1>Emma Walden</h1>
@@ -36,9 +45,9 @@
 
 <!-- Start of the body -->
 <body>
-  <section class="wrapper">
+  <section class="wrapper" id="about">
     <h3>About</h3>
-    <div class="about" id="about">
+    <div class="about">
         <img class="aboutImg" src="./assets/profile.jpg" alt="Emma standing in front of a canyon">
         <div class="aboutText">
             <p>Hello! My name is Emma, I’m a Front-End Web Developer with a background in Adventure Travel currently based in Toronto. While I had a variety of jobs in my career in the Travel industry, it was building and creating trips where I found my passion for improving websites to be functional, beautiful, and user-friendly. When I’m not coding you can find me petting dogs, going hiking, and travelling to places near and far.</p>
@@ -54,8 +63,10 @@
             <h4>Love in the Time of Allergies</h4>
             <h5>React API Firebase Sass</h5>
             <p>A react application that allows users to create guests with dietary restrictions saving them to Firebase. Users can add them to an upcoming party and search recipes using the Spoonacular API based on the restrictions of their party guests. Made in collaboration with Patrick Sherrard, Matthew Sen, and Bhagirthi Jhamb.</p>
-            <a href="">View Live</a>
-            <a href="">View on Github</a>
+            <div class="projectLinks">
+                <a href="https://bhagirthiemmamatthewpatrick-project6.github.io/bempApp/" rel="noopener" target="_blank">View Live</a>
+                <a href="https://github.com/BhagirthiEmmaMatthewPatrick-Project6/bempApp" rel="noopener" target="_blank">View on Github</a>
+            </div>
         </div>
         <img src="./assets/love.png" alt="laptop and mobile view of Love in the Time of Allergies website">
     </div>
@@ -64,8 +75,10 @@
             <h4>Bestsellers to Read</h4>
             <h5>React API Firebase Sass</h5>
             <p>A react application that allows users to pick a category of book to show the top 15 Bestselling books in that category using the New York Times API. Users can add books to a list to read using Firebase. </p>
-            <a href="">View Live</a>
-            <a href="">View on Github</a>
+            <div class="projectLinks">
+                <a href="https://emmawalden.github.io/emmaWaldenProject5/" rel="noopener" target="_blank">View Live</a>
+                <a href="https://github.com/emmawalden/emmaWaldenProject5" rel="noopener" target="_blank">View on Github</a>
+            </div>
         </div>
         <img src="./assets/bestsellers.png" alt="laptop and mobile view of Bestsellers to Read website">
     </div>
@@ -74,8 +87,10 @@
             <h4>A Moment in Nature</h4>
             <h5>Javascript JQuery API Sass HTML</h5>
             <p>An application that allows users to choose from a dropdown of nature options and display a gallery of images using the Pexels API. Each option in the dropdown is accompanied by audio. Made in collaboration with Shanel Beebe</p>
-            <a href="">View Live</a>
-            <a href="">View on Github</a>
+            <div class="projectLinks">
+                <a href="https://emmaandshanel.github.io/project4EmmaWaldenShanelBeebe/" rel="noopener" target="_blank">View Live</a>
+                <a href="https://github.com/emmaAndShanel/project4EmmaWaldenShanelBeebe" rel="noopener" target="_blank">View on Github</a>
+            </div>
         </div>
         <img src="./assets/nature.png" alt="laptop and mobile view of A Moment in Nature website">
     </div>
@@ -84,8 +99,10 @@
             <h4>Plant Matchmaker</h4>
             <h5>Javascript JQuery Sass HTML</h5>
             <p>An application that asks the user a few simple questions to pair them with their ideal plant. </p>
-            <a href="">View Live</a>
-            <a href="">View on Github</a>
+            <div class="projectLinks">
+                <a href="https://emmawalden.github.io/emmaWaldenProjectThree/" rel="noopener" target="_blank">View Live</a>
+                <a href="https://github.com/emmawalden/emmaWaldenProjectThree" rel="noopener" target="_blank">View on Github</a>
+            </div>
         </div>
         <img src="./assets/plants.png" alt="laptop and mobile view of Plant Matchmaker website">
     </div>
@@ -166,8 +183,8 @@
                     target="_blank"><i class="fab fa-github"></i></a>
             </li>
             <li>
-                <a href="mailto:emmajanewalden@gmail.com" aria-label="Link to email" rel="noopener" target="_blank"><i
-                        class="fas fa-envelope"></i></a>
+                <a href="https://www.instagram.com/emmawalnut/?hl=en" aria-label="Link to instagram" rel="noopener" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
             </li>
         </ul>
     </div>

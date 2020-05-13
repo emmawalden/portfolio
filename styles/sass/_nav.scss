@@ -1,113 +1,48 @@
-// Hamburger menu
-.hamburgerNav {
+// Larger screen nav
+.myLinks {
+    display: flex;
+}
 
-    img {
-        width: 30px;
-        height: 30px;
+.firstLinks,
+.secondLinks {
+    display: flex;
+    flex: 1 2 50%;
+    padding: 10px;
+
+    a {
+        padding: 0 20px;
+        letter-spacing: 0.2rem;
     }
 }
 
-// Screen reader only for the hamburger nav
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    border: 0;
+.firstLinks {
+    justify-content: flex-start;
 }
 
-// Hamburger Icon styling
-.menuToggle {
-    display: inline-block;
-    padding: 5px;
-}
-
-.mainMenu {
-    position: absolute;
-    display: none;
-    left: -200px;
-    top: 0;
-    height: 40%;
-    overflow-x: scroll;
-    overflow-y: visible;
-    transition: left 0.3s ease,
-        box-shadow 0.3s ease;
-    z-index: 999;
-}
-
-.mainMenu ul {
-    padding: 5px 0 0;
-    box-shadow: -8px 0 8px rgba(0,0,0,.4);
-    min-height: 100%;
-    width: 200px;
-    background: #F7F7FF;
-}
-
-.myLinks a {
-    display: block;
-    padding: 5px;
-    border-bottom: 1px solid $mainColor;
-}
-
-.myLinks a:first-child {
-    padding-top: 45px;
+.secondLinks {
+    justify-content: flex-end;    
 }
 
 .myLinks a:hover,
 .myLinks a:focus {
-    background: $backgroundColor;
+    color: $backgroundColor;
 }
 
-.mainMenu .menuClose {
-    position: absolute;
-    right: 0;
-    top: 0;
+// Hamburger Menu
+
+.hamburger {
+    display: none;
 }
 
-.hamburgerNav {
-    padding: 20px;
-    display: flex;
-    // align-items: baseline;
+.close {
+    width: 25px;
 }
 
-.mainMenu:target,
-.mainMenu[aria-expanded="true"] {
-    display: block;
-    left: 0;
-    top: 0;
-    outline: none;
-    box-shadow: 3px 0 12px rgba(0,0,0,0.25);
-}
 
-.mainMenu:target ul,
-.mainMenu[aria-expanded="true"] ul {
-    position: relative;
-    z-index: 1000;
-}
 
-.mainMenu:target + .backdrop,
-.mainMenu[aria-expanded="true"] + .backdrop {
-    position: absolute;
-    display: block;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 998;
-    background: #fff;
-    background: rgba(0,0,0,0.1);
-    cursor: default;
-}
 
-@supports (position: fixed) {
-    .mainMenu,
-    .mainMenu:target + .backdrop,
-    .mainMenu[aria-expanded="true"] + .backdrop {
-        position: fixed;
-    }
-}
+
+
+
 
 

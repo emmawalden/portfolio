@@ -66,7 +66,8 @@ a {
 
 // Font styling
 
-h2 {
+h2,
+h5 {
     font-weight: bold;
 }
 
@@ -85,6 +86,10 @@ h6 {
     line-height: 25px;
 }
 
+.skills h5 {
+    font-weight: 400;
+}
+
 
 // Colors
 
@@ -92,4 +97,8 @@ header,
 body, 
 a {
     color: $mainColor;
+}
+
+.hidden {
+    display: none;
 }
