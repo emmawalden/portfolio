@@ -844,7 +844,13 @@ footer {
   h2 {
     font-size: 2rem;
   }
+  .headingText {
+    padding-top: 100px;
+  }
   .drawing {
     right: -40px;
+  }
+  .projectText p {
+    font-size: 1.6rem;
   }
 }

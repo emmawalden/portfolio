@@ -224,7 +224,6 @@
     .about p {
         font-size: 1.6rem;
     }
-// removed flower icon for smallest screen sizes
 
     .drawing {
         width: 120px;
@@ -283,7 +282,15 @@
         font-size: 2rem;
     }
 
+    .headingText {
+        padding-top: 100px;
+    }
+
     .drawing {
         right: -40px;
+    }
+
+    .projectText p {
+        font-size: 1.6rem;
     }
 }
