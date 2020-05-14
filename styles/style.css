@@ -480,7 +480,7 @@ h5 {
   width: 150px;
   background-color: #FA7268;
   color: #fff;
-  padding: 8px 10px;
+  padding: 12px 10px;
   text-align: center;
   margin-right: 10px;
 }
@@ -720,14 +720,20 @@ footer {
   .fistLinks {
     padding-bottom: 0;
   }
+  .drawing {
+    width: 220px;
+    height: 220px;
+    top: -80px;
+    right: -110px;
+  }
 }
 
 @media (max-width: 750px) {
   .drawing {
     width: 200px;
     height: 200px;
-    top: -80px;
-    right: -60px;
+    top: -90px;
+    right: -90px;
   }
   .projectContainer h4 {
     padding-bottom: 25px;
@@ -794,7 +800,9 @@ footer {
     font-size: 1.6rem;
   }
   .drawing {
-    display: none;
+    width: 120px;
+    top: -120px;
+    right: 5px;
   }
   .projects img {
     width: 80%;
@@ -834,5 +842,8 @@ footer {
   }
   h2 {
     font-size: 2rem;
+  }
+  .drawing {
+    right: -40px;
   }
 }

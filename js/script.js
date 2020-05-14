@@ -1,7 +1,7 @@
 const App = {};
 
 App.hamburger = function () {
-    if(screen.width <= 1500) {
+    if(screen.width <= 1000) {
         
         $(".hamburger").on('click', function(e) {
             e.preventDefault();
@@ -15,7 +15,7 @@ App.hamburger = function () {
 }
 
 App.menu = function () {
-    if(screen.width <= 1500) {
+    if(screen.width <= 1000) {
         
         $(".myLinks").on('click', function (e) {
             e.preventDefault();
