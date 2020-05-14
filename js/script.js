@@ -1,36 +1,32 @@
 const App = {};
 
 App.hamburger = function () {
-    if(screen.width <= 1000) {
+    // if(screen.width <= 1000) {
         
-        $(".hamburger").on('click', function(e) {
+        $(".hamburger").click(function(e) {
             e.preventDefault();
             $(".myLinks").toggleClass("menuHide");
             $(".hamburger").toggleClass("hidden");
-            $(".hamburger").toggleClass("show");
             $(".close").toggleClass("hidden");
         })
-
-    }
-}
-
-App.menu = function () {
-    if(screen.width <= 1000) {
         
-        $(".myLinks").on('click', function (e) {
-            e.preventDefault();
-            $(".myLinks").toggleClass("menuHide");
-            $(".close").toggleClass("hidden");
-            $(".hamburger").toggleClass("hidden");
-        })
-
+        // }
     }
+
+App.closeMenu = function () {
+    $(".close").click(function(e) {
+        e.preventDefault();
+        $(".close").toggleClass("hidden");
+        $(".myLinks").toggleClass("menuHide");
+        $(".hamburger").toggleClass("hidden");
+    })
 }
+    
 
 // Initialize function
 App.init = () => {
     App.hamburger();
-    App.menu();
+    App.closeMenu();
 }
 
 // Document Ready function

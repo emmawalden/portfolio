@@ -310,10 +310,6 @@ a {
   color: #2E2F40;
 }
 
-.hidden {
-  display: none;
-}
-
 header {
   background-image: url("../assets/poppies.jpg");
   background-position: 70% 40%;
@@ -382,12 +378,9 @@ h1 {
   color: #FA7268;
 }
 
-.hamburger {
-  display: none;
-}
-
+.hamburger,
 .close {
-  width: 25px;
+  display: none;
 }
 
 h3 {
@@ -476,7 +469,7 @@ h5 {
 
 .projectLinks a {
   border: 1px solid #2E2F40;
-  border-radius: 2px;
+  border-radius: 5px;
   width: 150px;
   background-color: #2E2F40;
   color: #fff;
@@ -682,6 +675,9 @@ footer {
   }
   .show {
     display: block;
+  }
+  .hidden {
+    display: none;
   }
   .close,
   .hamburger {
