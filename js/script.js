@@ -1,8 +1,6 @@
 const App = {};
 
 App.hamburger = function () {
-    // if(screen.width <= 1000) {
-        
         $(".hamburger").click(function(e) {
             e.preventDefault();
             $(".myLinks").toggleClass("menuHide");
@@ -10,7 +8,6 @@ App.hamburger = function () {
             $(".close").toggleClass("hidden");
         })
         
-        // }
     }
 
 App.closeMenu = function () {

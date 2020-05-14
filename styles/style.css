@@ -559,7 +559,7 @@ h5 {
 }
 
 .socialContainer .email {
-  padding: 20px 0;
+  padding: 50px 0;
 }
 
 .socialList {
@@ -576,15 +576,13 @@ h5 {
   color: #fff;
 }
 
-.socialList p {
-  padding: 10px 20px 0 0;
+.socialList i:hover {
+  color: #FA7268;
 }
 
-.socialList i:hover,
-.socialList i:focus,
-.socialList p:hover,
-.socialList p:focus {
-  color: #FA7268;
+.socialList a:focus {
+  border: 1px solid #FA7268;
+  padding: 10px 0;
 }
 
 footer {
@@ -683,13 +681,11 @@ footer {
   .hamburger {
     width: 25px;
   }
-  .firstLinks,
-  .secondLinks {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding-top: 0;
+  .hamburgerNav a {
+    outline: none;
+  }
+  .hamburgerNav img:focus {
+    border: 1px solid #FA7268;
   }
   .myLinks {
     -webkit-box-orient: vertical;
@@ -711,11 +707,16 @@ footer {
     -webkit-transition: 0.2s all;
     transition: 0.2s all;
   }
+  .firstLinks,
+  .secondLinks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 0;
+  }
   .secondLinks li:last-child {
     border-bottom: none;
-  }
-  .fistLinks {
-    padding-bottom: 0;
   }
   .drawing {
     width: 220px;
@@ -802,7 +803,7 @@ footer {
     right: 5px;
   }
   .projects img {
-    width: 80%;
+    width: 100%;
   }
   .projectText p {
     margin-bottom: 10px;
@@ -826,10 +827,10 @@ footer {
     grid-gap: 10px;
   }
   .socialNav {
-    padding: 25px 0 15px 0;
+    padding: 25px 0;
   }
   .socialList i {
-    padding: 0 10px;
+    padding: 0 20px;
   }
 }
 

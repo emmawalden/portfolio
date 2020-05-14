@@ -17,7 +17,7 @@
     }
 
     .email {
-        padding: 20px 0;
+        padding: 50px 0;
     }
 }
 
@@ -29,15 +29,13 @@
             padding: 0 40px;
             color: #fff;
         }
-
-        p {
-            padding: 10px 20px 0 0;
-        }
 }
 
-.socialList i:hover,
-.socialList i:focus,
-.socialList p:hover,
-.socialList p:focus  {
+.socialList i:hover {
     color: $backgroundColor;
+}
+
+.socialList a:focus {
+    border: 1px solid $backgroundColor;
+    padding: 10px 0;
 }
