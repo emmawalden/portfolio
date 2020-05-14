@@ -447,7 +447,7 @@ h5 {
   -webkit-box-flex: 1;
       -ms-flex: 1 2 50%;
           flex: 1 2 50%;
-  padding-top: 70px;
+  padding-top: 100px;
 }
 
 .project1,
@@ -458,8 +458,7 @@ h5 {
 }
 
 .projects img {
-  width: 50%;
-  background: none;
+  width: 60%;
 }
 
 .projects p {
@@ -846,7 +845,7 @@ footer {
     font-size: 2rem;
   }
   .headingText {
-    padding-top: 100px;
+    padding-top: 125px;
   }
   .drawing {
     right: -40px;
