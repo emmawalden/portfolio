@@ -478,7 +478,7 @@ h5 {
   border: 1px solid #2E2F40;
   border-radius: 2px;
   width: 150px;
-  background-color: #FA7268;
+  background-color: #2E2F40;
   color: #fff;
   padding: 12px 10px;
   text-align: center;
@@ -487,8 +487,9 @@ h5 {
 
 .projectLinks a:hover,
 .projectLinks a:focus {
-  border: 1px solid #FA7268;
-  background-color: #2E2F40;
+  border: 1px solid #2E2F40;
+  background-color: #FA7268;
+  color: #2E2F40;
 }
 
 .skills {

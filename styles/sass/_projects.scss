@@ -37,7 +37,7 @@ h5 {
         border: 1px solid $mainColor;
         border-radius: 2px;
         width: 150px;
-        background-color: $backgroundColor;
+        background-color: $mainColor;
         color: #fff;
         padding: 12px 10px;
         text-align: center;
@@ -46,8 +46,9 @@ h5 {
 
     a:hover,
     a:focus {
-        border: 1px solid $backgroundColor;
-        background-color: $mainColor;
+        border: 1px solid $mainColor;
+        background-color: $backgroundColor;
+        color: $mainColor;
 
     }
 }
