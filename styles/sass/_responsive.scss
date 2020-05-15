@@ -72,6 +72,7 @@
         top: 3%;
         z-index: 100;
         background: none;
+        outline: none;
     }
 
     .menuHide {
@@ -91,13 +92,13 @@
         width: 25px;
     }
 
-    .hamburgerNav img:focus {
-        border: 1px solid $backgroundColor;
+    .hamburger:focus {
+        border: 1px solid $accentColor;
     }
 
     .myLinks {
         flex-direction: column;
-        background: $accentColor;
+        background: $backgroundColor;
         opacity: 0.8;
 
         li {
@@ -260,7 +261,7 @@
         grid-gap:10px;
     }
 
-    .socialNav {
+    .bottomNav {
         padding: 25px 0;
     }
 
@@ -268,6 +269,16 @@
 
         i {
             padding: 0 20px;
+        }
+    }
+
+    .bottomLinks {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+
+        li {
+            padding: 10px 0;
         }
     }
 }

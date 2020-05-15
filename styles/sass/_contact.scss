@@ -1,5 +1,5 @@
 // Social list at the bottom of the page
-.socialNav {
+.bottomNav {
     background-color: $mainColor;
     color: #fff;
     padding: 50px 0;
@@ -26,16 +26,29 @@
     justify-content: center;
 
         i {
-            padding: 0 40px;
             color: #fff;
+            padding: 0 40px;
         }
 }
 
-.socialList i:hover {
-    color: $backgroundColor;
+.socialList i:hover,
+.bottomLinks a:hover {
+    color: $accentColor;
 }
 
-.socialList a:focus {
-    border: 1px solid $backgroundColor;
+.socialList a:focus,
+.bottomLinks a:focus {
+    border: 1px solid $accentColor;
     padding: 10px 0;
+}
+
+// Start of the bottom nav with links to sections of the page 
+.bottomLinks {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+
+    a {
+        color: #fff;
+    }
 }

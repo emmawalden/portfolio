@@ -533,7 +533,7 @@ h5 {
   text-align: center;
 }
 
-.socialNav {
+.bottomNav {
   background-color: #2E2F40;
   color: #fff;
   padding: 50px 0;
@@ -572,17 +572,32 @@ h5 {
 }
 
 .socialList i {
-  padding: 0 40px;
   color: #fff;
+  padding: 0 40px;
 }
 
-.socialList i:hover {
+.socialList i:hover,
+.bottomLinks a:hover {
   color: #FA7268;
 }
 
-.socialList a:focus {
+.socialList a:focus,
+.bottomLinks a:focus {
   border: 1px solid #FA7268;
   padding: 10px 0;
+}
+
+.bottomLinks {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.bottomLinks a {
+  color: #fff;
 }
 
 footer {
@@ -667,6 +682,7 @@ footer {
     top: 3%;
     z-index: 100;
     background: none;
+    outline: none;
   }
   .menuHide {
     display: none;
@@ -681,7 +697,7 @@ footer {
   .hamburger {
     width: 25px;
   }
-  .hamburgerNav img:focus {
+  .hamburger:focus {
     border: 1px solid #FA7268;
   }
   .myLinks {
@@ -823,11 +839,24 @@ footer {
   .skills ul {
     grid-gap: 10px;
   }
-  .socialNav {
+  .bottomNav {
     padding: 25px 0;
   }
   .socialList i {
     padding: 0 20px;
+  }
+  .bottomLinks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 20px;
+  }
+  .bottomLinks li {
+    padding: 10px 0;
   }
 }
 

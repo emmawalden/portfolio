@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <!-- This is the start of the header -->
-<header>
+<header id="home">
     <div class="topNav"">
         
         <nav id="mainMenu" class="fixed" tabindex="0" aria-label="open main menu" >
@@ -51,7 +51,7 @@
         <div class="aboutText">
             <p>Hello! My name is Emma, I’m a Front-End Web Developer with a background in Adventure Travel currently based in Toronto. While I had a variety of jobs in my career in the Travel industry, it was building and creating trips where I found my passion for improving websites to be functional, beautiful, and user-friendly. When I’m not coding you can find me petting dogs, going hiking, and travelling to places near and far.</p>
             <!-- Poppy flower by Tatyana from the Noun Project -->
-            <img class="drawing" src="./assets/poppy.svg" alt="">
+            <img class="drawing" src="./assets/poppy.svg" alt="decorative flower">
         </div>
     </div>
   </section>  
@@ -158,7 +158,7 @@
     </ul>
   </section>
 <!-- This is the nav with the social links -->
-<nav class="socialNav">
+<nav class="bottomNav">
     <div class="socialContainer wrapper" id="contact">
         <div>
             <h6>Contact Me</h6>
@@ -182,8 +182,16 @@
                         class="fab fa-instagram"></i></a>
             </li>
         </ul>
-    </div>
+    </div>  
+    <ul class="bottomLinks">
+        <li><a href="#home" aria-label="go to the top of the page">Home</a></li>
+        <li><a href="#about" aria-label="go to about section">About</a></li>
+        <li><a href="#projects" aria-label="go to projects section">Projects</a></li>
+        <li><a href="#skills" aria-label="go to skills section">Skills</a></li>
+        <li><a href="#contact" aria-label="go to contact section">Contact</a></li>
+    </ul>
 </nav>
+
 <footer>
     <p>© 2020 Emma Walden</p>
 </footer>
