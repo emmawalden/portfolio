@@ -1,0 +1,59 @@
+@media (max-width: 1000px) {
+// Start of the hamburger menu
+// Fixing the menu as the user scrolls
+    .fixed {
+        position: fixed;
+        left: 3%;
+        top: 3%;
+        z-index: 100;
+        background: none;
+    }
+
+    .menuHide {
+        display: none;
+    }   
+
+    .show {
+        display: block;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .close,
+    .hamburger {
+        width: 25px;
+    }
+
+    .hamburger:focus {
+        border: 1px solid $accentColor;
+    }
+
+    .myLinks {
+        flex-direction: column;
+        background: $backgroundColor;
+        opacity: 0.8;
+
+        li {
+            border-bottom: 1px solid $mainColor;
+            transition: 0.2s all;
+        }
+        a {
+            display: block;
+            padding: 20px 10px 12px 30px;
+            color: $mainColor;
+            transition: 0.2s all;
+        }
+    }
+
+    .firstLinks,
+    .secondLinks {
+        flex-direction: column;
+        padding-top: 0;
+    }
+
+    .secondLinks li:last-child {
+        border-bottom: none;
+    }
+}
