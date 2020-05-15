@@ -681,9 +681,6 @@ footer {
   .hamburger {
     width: 25px;
   }
-  .hamburgerNav a {
-    outline: none;
-  }
   .hamburgerNav img:focus {
     border: 1px solid #FA7268;
   }
@@ -784,7 +781,7 @@ footer {
     height: 70vh;
   }
   .headingText {
-    padding-top: 70px;
+    padding-top: 100px;
   }
   .aboutImg {
     width: 250px;
@@ -842,7 +839,7 @@ footer {
     font-size: 2rem;
   }
   .headingText {
-    padding-top: 125px;
+    padding-top: 100px;
   }
   .drawing {
     right: -40px;

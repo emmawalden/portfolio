@@ -91,10 +91,6 @@
         width: 25px;
     }
 
-    .hamburgerNav a {
-        outline: none;
-    }
-
     .hamburgerNav img:focus {
         border: 1px solid $backgroundColor;
     }
@@ -212,7 +208,7 @@
     }
 
     .headingText {
-        padding-top: 70px;
+        padding-top: 100px;
     }
 
 // Reducing image and text sizes for about section
@@ -287,7 +283,7 @@
     }
 
     .headingText {
-        padding-top: 125px;
+        padding-top: 100px;
     }
 
     .drawing {
