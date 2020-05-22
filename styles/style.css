@@ -578,7 +578,9 @@ h5 {
 }
 
 .socialList i:hover,
-.bottomLinks a:hover {
+.bottomLinks a:hover,
+.email:hover,
+.email:focus {
   color: #FA7268;
 }
 

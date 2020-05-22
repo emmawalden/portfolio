@@ -34,7 +34,9 @@
 }
 
 .socialList i:hover,
-.bottomLinks a:hover {
+.bottomLinks a:hover,
+.email:hover,
+.email:focus {
     color: $accentColor;
 }
 
