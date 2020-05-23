@@ -40,7 +40,7 @@ App.openMenu = function () {
             {
                 scrollTop: $($(this).attr('href')).offset().top,
             },
-            800,
+            1000,
             'linear'
         )
     })
