@@ -32,6 +32,7 @@ h4 {
     font-weight: 200;
 }
 
+
 // Font sizing 
 
 h1 {
@@ -39,9 +40,13 @@ h1 {
     
 }
 
-h2,
-h4 {
+h2 {
     font-size: 3rem;
+}
+
+h4 {
+    font-size: 3.5rem;
+    font-weight: bold;
 }
 
 i {
